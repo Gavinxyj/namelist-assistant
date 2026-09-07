@@ -1,0 +1,9 @@
+# dsh bundle patch: inserts this plugin into a profile's layer stack.
+# `name` 是包名（dsh-plugin-namelist），需已安装到 profile 的 node_modules。
+- insert:
+    - id: namelist
+      name: 'dsh-plugin-namelist'
+      inject: ['tools']
+      config:
+        # 电销名单后端服务地址（可留空，改用环境变量 NAMELIST_API_URL）
+        baseUrl: 'http://za-castle-telemarket-ms.test.za.biz'

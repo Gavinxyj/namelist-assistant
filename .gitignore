@@ -1,0 +1,14 @@
+# Node
+node_modules/
+*.log
+*.tgz
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# 开发时临时文件
+*.tmp

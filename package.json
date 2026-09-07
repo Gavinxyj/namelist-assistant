@@ -1,0 +1,34 @@
+{
+  "name": "dsh-plugin-namelist",
+  "version": "0.1.0",
+  "description": "电销名单管理辅助插件：通过聊天对话调用后端服务，完成电销名单的查询、修改、指派坐席。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "telemarket",
+    "quotelist",
+    "名单管理",
+    "电销"
+  ],
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  }
+}
